@@ -170,7 +170,7 @@ class UserController extends Controller
       }
 
     if(!$result || !$this->model->affected_rows())
-      return $this->Listar("Hubo un error al editar el cliente número {$request_params['id']}", 'warning');
+      return $this->Listar("No se edito ningun registro del cliente número {$request_params['id']}", 'warning');
 
     $this->Listar("Cliente número {$request_params['id']} actualizado");
   }

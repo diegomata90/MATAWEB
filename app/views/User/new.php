@@ -7,14 +7,11 @@
     <form method="POST" action="<?= FOLDER_PATH . '/User/Agregar' ?>" enctype="multipart/form-data" >
       <div class="row">
         <div class="col-md-5">
-          <div class="form-group">
-            <div class="img-circuler">
-                <img src="" alt="Nuevo_Usuario" width='100%' height='100%'/>
-            </div>         
+          <br>
+          <div class="file-loading">
+              <input name="avatar" id="avatar" class="file" type="file" >
           </div>
-          <div class="form-group col-md-12">
-            <input type="file" name="avatar" id="avatar"/>
-          </div>
+          <br>
         </div>
         <div class="col-md-7">
           <div class="form-group">
@@ -55,4 +52,4 @@
       <a class="btn btn-default" href="<?= FOLDER_PATH . '/User' ?>" role="button">Cancel</a>
     </form>
   </div>
-</div>  
+</div>

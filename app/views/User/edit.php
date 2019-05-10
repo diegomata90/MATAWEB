@@ -7,13 +7,6 @@
 		<form method="POST" action="<?= FOLDER_PATH . '/User/Actualizar' ?>" enctype="multipart/form-data" >
 			<div class="row">
 				<div class="col-md-5">
-			        <div class="col-md-12">
-			        <?php if($info_item->avatar != ''): ?>
-			            <div class="img-circuler">
-			                <img src="<?= PATH_ASSETS . 'img/'.$info_item->avatar ?>" width='100%' height='100%'/>
-			            </div>
-			        <?php endif; ?>						
-					</div>
 					<div class="form-group col-md-12">
 						<input type="file" name="avatar" id="avatar"/>
 					</div>

@@ -64,8 +64,27 @@
   <script src="<?= PATH_ASSETS . '/js/demo/chart-area-demo.js' ?>"></script>
   <script src="<?= PATH_ASSETS . '/js/demo/chart-pie-demo.js' ?>"></script>
 
+  <!-- Scripts plugins -->
+  <script src="<?= PATH_ASSETS . '/js/plugins/piexif.js' ?>"></script>
+  <script src="<?= PATH_ASSETS . '/js/plugins/sortable.js' ?>"></script>
+  <script src="<?= PATH_ASSETS . '/js/fileinput.js' ?>"></script>
+  <script src="<?= PATH_ASSETS . '/themes/fas/theme.js' ?>"></script>
 
 
 </body>
-
+<script>
+    $('#avatar').fileinput({
+        theme: 'fas',
+        allowedFileExtensions: ['jpg', 'png', 'gif'],
+        showCaption: false,
+        showUpload: false,
+        initialPreviewAsData: true,
+        initialPreview: [
+            '<?= PATH_ASSETS . '/img/'.$info_item->avatar?>'
+        ],
+        initialPreviewConfig: [
+            {caption: '<?=$info_item->avatar ?>', size: 329892, width: "200px", url: "{$url}", key: 1}
+        ]
+    });
+</script>  
 </html>

@@ -16,6 +16,8 @@
 	  <!-- Custom styles for this template-->
       <link rel="stylesheet" href="<?= PATH_ASSETS . '/css/sb-admin-2.css' ?>" />
 
+    <!-- Stylo for add imagenes-->
+      <link rel="stylesheet" media="all" href="<?= PATH_ASSETS . '/css/fileinput.css' ?>" type="text/css"/>
 
     <!-- Custom styles for this page -->
       <link rel="stylesheet" href="<?= PATH_ASSETS . '/vendor/datatables/dataTables.bootstrap4.min.css' ?>" />
